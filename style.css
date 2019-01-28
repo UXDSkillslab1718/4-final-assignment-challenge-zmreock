@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+nav{
+    flex: 1 1 auto;
+    /* background-color: #f5dfb66b; */
+    background: #fefcea; /* Old browsers */
+    background: -moz-linear-gradient(top, #fefcea 0%, #f4b744 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fefcea 0%,#f4b744 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fefcea 0%,#f4b744 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f4b744',GradientType=0 ); /* IE6-9 */
+    padding: 20px;
+}
+main{
+    flex: 2 1 auto;
+    background-color: #480918c9;
+    padding: 20px;
+    color: #fff;
+    min-height: calc(800px - 70px);
+}
+
+footer{
+    margin: -20px;
+    text-align: center;
+    background-color: #e4e4e4;
+    color:#000;
+}
+
+footer > p {
+    margin-bottom: 0;
+}
+
+.logo-container{
+    text-align: center;
+}
+
+.navigation-bar > ul{
+    /* List style Ul ve OL de kullanılan itemların kösesindekli bullet içindir */
+    list-style: none;
+    background-color: #480918c9;
+    padding: 0;
+}
+
+.navigation-bar > ul > li {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation-bar > ul > li > a{
+    text-decoration: none;
+    color: #f1ece2;
+}
+.navigation-bar > ul > li > a:hover{
+    color: #000;
+}
+
+
+.navigation-bar ul li a:active{
+    color: rgb(99, 99, 99);
+}
+
+.navigation-bar ul li a:visited{
+    color: #000;
+}
+
+.description-container > .description > h2 {
+    border-bottom: 1px solid #000;
+    line-height: 70px;
+}
+
+.project-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.project{
+    width: 23%;
+    text-align: center;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+section > h1{
+    font-size: 48px;
+}
+
+@media only screen and (max-width:700px){
+    body{
+        flex-direction: column;
+    }
+    .description-container .description h2{
+        line-height: 0;
+    }
+
+    .project > img{
+        width: 100%;
+    }
+    .project > h2 {
+        font-size: 14px;
+    }
+}
+@media only screen and  (max-width:1025px){
+    .project{
+        width:28%;
+    }
+}
