@@ -30,29 +30,6 @@ $(window).on('load', function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
-
-	$('.review-slider').owlCarousel({
-		loop: true,
-		nav: false,
-		dots: true,
-		items: 1,
-		autoplay: true
-	});
-
-
-
-	$('.progress-bar-style').each(function() {
-		var progress = $(this).data("progress");
-		var prog_width = progress + '%';
-		if (progress <= 100) {
-			$(this).append('<div class="bar-inner" style="width:' + prog_width + '"><span>' + prog_width + '</span></div>');
-		}
-		else {
-			$(this).append('<div class="bar-inner" style="width:100%"><span>' + prog_width + '</span></div>');
-		}
-	});
-
-
 	$('.lan-prog').each(function() {
 		var progress = $(this).data("lanprogesss");
 		var ele      = '<span></span>';
